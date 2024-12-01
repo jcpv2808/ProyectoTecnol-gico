@@ -1,0 +1,197 @@
+/* GLOBALES RESERVAS */
+.pasosContainer {
+    padding: 0;
+}
+
+.pasoNroLista {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nroInactivo {
+    background-color: #D9D9D9;
+    color: #000;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 13.75px;
+}
+
+.nroActivo {
+    background-color: #000;
+    color: #fff;
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 13.75px;
+}
+
+.textoPaso {
+    font-size: 0.9rem;
+}
+
+.textoActivo {
+    font-weight: 600;
+}
+
+/* LOCALES */
+.localesContainer {
+    border-radius: 15px;
+    padding: 0;
+}
+
+.pCorregido {
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+
+.localImg {
+    padding: 0;
+}
+
+.localImg img {
+    border-radius: 15px 0px 0px 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.localInfo {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.localInfo > a {
+    width: 100%;
+    padding-left: 10px;
+    align-items: center;
+}
+
+.linkLocal {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.localNombre {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.localDir {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+    /* Pasos de reserva */
+    .nroInactivo, .nroActivo {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .textoPaso {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /* Locales */
+    .localesContainer {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .localImg {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .localImg img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    .localInfo {
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .localNombre {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .localDir {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .linkLocal {
+        font-size: 0.9rem;
+        color: #000;
+        text-decoration: none;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Pasos de reserva */
+    .nroInactivo, .nroActivo {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .textoPaso {
+        font-size: 0.7rem;
+    }
+
+    /* Locales */
+    .localImg img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .localNombre {
+        font-size: 18px;
+    }
+
+    .localDir {
+        font-size: 0.8rem;
+    }
+}

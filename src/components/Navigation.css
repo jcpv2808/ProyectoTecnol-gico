@@ -1,0 +1,55 @@
+.navCustom{
+    height: 100px;
+}
+
+.nav_logo{
+    margin: 0;
+}
+
+.nav__title{
+    margin: 0;
+}
+
+.nav_subtitle{
+    margin: 0;
+}
+.navCustom_nav__link--menu{
+    margin: 0;
+    height: 100%;
+    display: block;
+}
+
+.navCustom_nav__link--menu>ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.navCustom_nav__link--menu>ul>li{
+    height: 100%;
+}
+
+/* Media queries para tabletas y móviles */
+@media (max-width: 800px) {
+    .navCustom_nav__link--menu>ul>li{
+        height: auto;
+    }
+
+    .nav__close2{
+        width: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navCustom_nav__link--menu>ul>li{
+        height: auto;
+    }
+    
+    .nav__close2{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 50px;
+        cursor: pointer;
+    }
+}

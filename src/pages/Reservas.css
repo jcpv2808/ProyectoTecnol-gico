@@ -1,0 +1,66 @@
+/* Estilos generales */
+.importanteTitulo {
+    font-weight: 600;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.importante {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+}
+
+#btnAceptar {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btnAceptar:hover {
+    background-color: #333;
+}
+
+/* Media queries para tablet */
+@media (max-width: 800px) {
+    .importanteTitulo {
+        font-size: 1.8rem;
+    }
+
+    .importante {
+        font-size: 28px;
+    }
+
+    #btnAceptar {
+        width: 80%;
+    }
+}
+
+/* Media queries para móvil */
+@media (max-width: 600px) {
+    .importanteTitulo {
+        font-size: 1.5rem;
+    }
+
+    .importante {
+        font-size: 24px;
+    }
+
+    ul {
+        padding: 0;
+        list-style-position: inside;
+        font-size: 0.9rem;
+    }
+
+    #btnAceptar {
+        width: 100%;
+        padding: 0.75rem;
+        text-align: center;
+    }
+}

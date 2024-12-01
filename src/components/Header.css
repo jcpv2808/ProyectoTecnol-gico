@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    .nav__close{
+        width: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav__close{
+        width: 40px;
+    }
+}

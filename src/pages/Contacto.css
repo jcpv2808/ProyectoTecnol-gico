@@ -1,0 +1,135 @@
+.contactoImg {
+    width: 100%;
+    height: auto; 
+    max-height: 70vh; 
+    object-fit: cover; 
+}
+.contacto {
+    flex-direction: column;
+}
+
+#contactateTitulo {
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+
+#contactenosInfoNotas {
+    font-size: 0.9rem;
+    line-height: 1.5; /* Cambiado de 2px a un valor relativo */
+    margin-bottom: 10px;
+}
+.inputEstilo {
+    padding: 8px 15px;
+    border: solid 2px #ddd;
+    border-radius: 5px;
+}
+
+.inputEstilo:focus-visible {
+    outline-color: #ccc;
+}
+
+#inputCorreo {
+    width: 80%;
+}
+
+/* SELECT COMPUESTO */
+#selectCompuesto {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: solid 1px #ddd;
+    padding: 0;
+    margin-left: 0.8rem;
+}
+
+.prefijosContainer {
+    padding: 0;
+}
+
+#prefijosNumericos {
+    width: 100%;
+    border: 0;
+    padding: 8px 10px;
+    border-right: solid 1px #ddd;
+    color: #888;
+}
+
+#celularInputContainer {
+    padding: 0;
+}
+
+#celularInput {
+    padding: 8px 10px;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#celularInput:focus-visible {
+    outline: none;
+}
+
+/* SELECT COMPUESTO */
+#inputMensaje {
+    width: 80%;
+}
+
+.cbContainerContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnEnviarContacto {
+    color: #fff;
+    background-color: #000;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 80px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 800px) {
+    #contactateTitulo {
+        font-size: 1.2rem; 
+        text-align: center; 
+    }
+
+    #inputCorreo,
+    #inputMensaje {
+        width: 100%; 
+    }
+
+    .cbContainerContacto {
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    #btnEnviarContacto {
+        width: 100%; 
+        padding: 15px; 
+    }
+}
+
+@media (max-width: 600px) {
+    #contactateTitulo {
+        font-size: 1rem; 
+    }
+
+    .inputEstilo {
+        font-size: 0.8rem; 
+    }
+
+    #btnEnviarContacto {
+        padding: 15px; 
+        font-size: 0.9rem; 
+    }
+    #contactenosInfoNotas {
+        font-size: 0.8rem; 
+        line-height: 1.5; 
+    }
+}
